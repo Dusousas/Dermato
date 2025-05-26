@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.maxW{
+  max-width: 1620px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.bgMain{
+  background-image: url('/home-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
