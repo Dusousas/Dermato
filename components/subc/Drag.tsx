@@ -77,8 +77,8 @@ export default function Drag(): JSX.Element {
                             />
                             {/* Label BEFORE */}
                             <div className='absolute left-8 top-1/2 -translate-y-1/2 -rotate-90'>
-                                <span className='text-white text-xl font-bold tracking-[0.3em] drop-shadow-lg'>
-                                    BEFORE
+                                <span className='text-white text-xl font-bold tracking-[0.3em] uppercase drop-shadow-lg'>
+                                    Antes
                                 </span>
                             </div>
                         </div>
@@ -98,8 +98,8 @@ export default function Drag(): JSX.Element {
                             />
                             {/* Label AFTER */}
                             <div className='absolute right-8 top-1/2 -translate-y-1/2 rotate-90'>
-                                <span className='text-white text-xl font-bold tracking-[0.3em] drop-shadow-lg'>
-                                    AFTER
+                                <span className='text-white text-xl font-bold tracking-[0.3em] uppercase drop-shadow-lg'>
+                                    Depois
                                 </span>
                             </div>
                         </div>
