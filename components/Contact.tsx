@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <>
             <section id='contact' className=''>
-                <div className='flex flex-col'>
+                <div className='flex flex-col lg:flex-row'>
 
                     <article className='lg:w-1/2 bg-BrowP'>
                         <Form />
