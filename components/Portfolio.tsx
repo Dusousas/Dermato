@@ -5,7 +5,7 @@ export default function Portfolio() {
     return (
         <>
             <section className='py-32 bg-gradient-to-br from-WhiteD to-BrowS/50'>
-                <div className='maxW flex gap-10 items-center'>
+                <div className='maxW flex flex-col gap-10 items-center lg:flex-row'>
                     <Drag />
 
                     <article>

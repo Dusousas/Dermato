@@ -61,7 +61,7 @@ export default function Drag(): JSX.Element {
         <section className=''>
             <div className=''>
                 <article className='w-[50%]'>
-                <div className='relative w-[700px]'>
+                <div className='relative w-[500px]'>
                     <div 
                         ref={containerRef}
                         className='relative overflow-hidden rounded-2xl shadow-2xl cursor-ew-resize select-none'
