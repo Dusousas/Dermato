@@ -3,10 +3,10 @@ import React from 'react';
 export default function About() {
     return (
         <>
-            <section className='py-20'>
+            <section id='about' className='py-20'>
                 <div className='maxW flex flex-col gap-10 justify-center items-center lg:flex-row'>
                     <article className='flex flex-col lg:w-[50%]'>
-                        <p className="text-BrowP font-medium tracking-widest text-center lg:text-left">Sobre nós</p>
+                        <p className="text-BrowP font-medium tracking-widest text-center uppercase lg:text-left">Sobre nós</p>
                         <h1 className='text-black font-semibold text-4xl mt-4 text-center lg:text-left'>Lorem ipsum dolor sit.</h1>
                         <p className='text-BrowP mt-4 text-center lg:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, iure maxime quidem cumque animi quae illo voluptas nemo velit corporis ullam. Ab repudiandae exercitationem amet sequi corrupti, aperiam saepe sint corporis neque blanditiis vel ad. Libero possimus officia saepe?</p>
                         <p className='text-BrowP mt-2 text-center lg:text-left'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, iure maxime quidem cumque animi quae illo voluptas nem.</p>

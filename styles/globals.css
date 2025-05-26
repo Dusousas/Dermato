@@ -5,6 +5,7 @@
 body,html {
   font-family: "Montserrat", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .maxW{
@@ -18,5 +19,5 @@ body,html {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: calc(100vh - 80px);
 }

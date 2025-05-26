@@ -4,10 +4,10 @@ import { FaInstagramSquare, FaWhatsappSquare } from 'react-icons/fa';
 export default function Main() {
     return (
         <>
-            <section className='bgMain'>
+            <section className='bgMain relative'>
                 <div className='maxW flex flex-col justify-center h-full'>
                     <article className='flex flex-col gap-4 lg:w-[45%]'>
-                        <p className="text-BrowP font-medium tracking-widest">Skin - LoremIpsum</p>
+                        <p className="text-BrowP font-medium tracking-widest uppercase">Skin - LoremIpsum</p>
                         <h1 className='text-black font-semibold text-7xl'>Lorem ipsum dolor sit.</h1>
                         <p className='text-BrowP'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo cum quisquam ipsa aspernatur sapiente at blanditiis suscipit unde in dolore.</p>
                     </article>
@@ -27,10 +27,10 @@ export default function Main() {
                         </div>
                     </article>
 
-                    <article className='flex gap-2 absolute bottom-0 right-10'>
-                        <FaInstagramSquare className='text-BrowP text-3xl' />
-                        <FaWhatsappSquare className='text-BrowP text-3xl' />
-                        <FaInstagramSquare className='text-BrowP text-3xl' />
+                    <article className='flex gap-2 absolute bottom-4 right-4'>
+                        <FaInstagramSquare className='text-BrowP text-3xl cursor-pointer' />
+                        <FaWhatsappSquare className='text-BrowP text-3xl cursor-pointer' />
+                        <FaInstagramSquare className='text-BrowP text-3xl cursor-pointer' />
                     </article>
                 </div>
             </section>

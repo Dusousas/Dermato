@@ -17,7 +17,7 @@ export default function Navbar() {
         <>
             {/* Navbar Desktop */}
             <nav className="hidden lg:block">
-                <ul className="flex gap-6 text-lg uppercase  text-BlueP">
+                <ul className="flex gap-6 text-lg uppercase  text-BrowP">
                     <a href="#home"><li>Início</li></a>
                     <a href="#about"><li>Sobre</li></a>
                     <a href="#services"><li>Serviços</li></a>
@@ -30,7 +30,7 @@ export default function Navbar() {
                 {/* Botão do menu */}
                 <button
                     onClick={() => setIsOpen(!isOpen)}
-                    className="text-3xl text-BlueP focus:outline-none relative z-50"
+                    className="text-3xl text-BrowP focus:outline-none relative z-50"
                 >
                     {isOpen ? <FiX /> : <FiMenu />}
                 </button>
@@ -41,7 +41,7 @@ export default function Navbar() {
                         isOpen ? "translate-x-0" : "translate-x-full"
                     }`}
                 >
-                    <ul className="flex flex-col items-center gap-8 text-lg uppercase  text-BlueP">
+                    <ul className="flex flex-col items-center gap-8 text-lg uppercase  text-BrowP">
                         <a href="#home" onClick={() => setIsOpen(false)}><li>Início</li></a>
                         <a href="#about" onClick={() => setIsOpen(false)}><li>Sobre</li></a>
                         <a href="#services" onClick={() => setIsOpen(false)}><li>Serviços</li></a>
