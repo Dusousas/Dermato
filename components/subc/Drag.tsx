@@ -31,6 +31,9 @@ export default function Drag(): JSX.Element {
     const handleTouchMove = (e: TouchEvent): void => {
         if (!isDragging || !containerRef.current) return;
         
+        // Previne o scroll da página
+        e.preventDefault();
+        
         const rect = containerRef.current.getBoundingClientRect();
         const x = e.touches[0].clientX - rect.left;
         const percentage = Math.max(0, Math.min(100, (x / rect.width) * 100));
@@ -45,7 +48,7 @@ export default function Drag(): JSX.Element {
         if (isDragging) {
             document.addEventListener('mousemove', handleMouseMove);
             document.addEventListener('mouseup', handleMouseUp);
-            document.addEventListener('touchmove', handleTouchMove);
+            document.addEventListener('touchmove', handleTouchMove, { passive: false });
             document.addEventListener('touchend', handleTouchEnd);
             
             return () => {
@@ -64,8 +67,11 @@ export default function Drag(): JSX.Element {
                 <div className='relative w-[500px] lg:w-[700px]'>
                     <div 
                         ref={containerRef}
-                        className='relative overflow-hidden rounded-2xl shadow-2xl cursor-ew-resize select-none'
-                        style={{ aspectRatio: '16/10' }}
+                        className='relative overflow-hidden rounded-2xl shadow-2xl cursor-ew-resize select-none touch-none'
+                        style={{ 
+                            aspectRatio: '16/10',
+                            touchAction: 'none'
+                        }}
                     >
                         {/* Imagem ANTES (fundo) */}
                         <div className='absolute inset-0'>
@@ -111,9 +117,10 @@ export default function Drag(): JSX.Element {
                         >
                             {/* Botão de controle */}
                             <div 
-                                className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg border-4 border-BrowP cursor-ew-resize flex items-center justify-center hover:scale-110 transition-transform duration-200'
+                                className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 bg-white rounded-full shadow-lg border-4 border-BrowP cursor-ew-resize flex items-center justify-center hover:scale-110 transition-transform duration-200 touch-none'
                                 onMouseDown={handleMouseDown}
                                 onTouchStart={handleTouchStart}
+                                style={{ touchAction: 'none' }}
                             >
                                 <div className='flex space-x-1'>
                                     <div className='w-1 h-4 bg-BrowP rounded-full'></div>
